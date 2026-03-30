@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Worldle Clone</title>
+    <title>Worldle Ultra</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
@@ -17,14 +17,20 @@
             </div>
         </header>
 
-        <div id="map-container">
-            </div>
+        <div id="map-container"></div>
+
+        <div id="hint-box" class="hidden">
+            <p id="hint-text"></p>
+        </div>
 
         <div class="input-area">
             <input type="text" id="guess-input" placeholder="Enter country name..." autocomplete="off">
             <button id="submit-btn" onclick="checkGuess()">Guess</button>
             <p id="message"></p>
         </div>
+
+        <div id="guess-history">
+            </div>
     </div>
     <script src="script.js"></script>
 </body>
