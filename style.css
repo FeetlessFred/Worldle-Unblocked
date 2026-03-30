@@ -59,7 +59,35 @@ button:hover {
 .mode-toggle button {
     background-color: #3a3a3c;
     margin: 5px;
-    font-size: 12px;
+    font-size: 12px;c
+    /* Keep previous styles and add these: */
+#hint-box {
+    background: #3a3a3c;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    border-left: 4px solid #b59f3b;
+}
+
+#guess-history {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.guess-row {
+    display: flex;
+    justify-content: space-between;
+    background: #272729;
+    padding: 8px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.direction-arrow { color: #818384; }
+.proximity-pct { font-weight: bold; color: #538d4e; }
+.hidden { display: none; }
 }
 
 #message {
