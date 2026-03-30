@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worldle Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1 id="mode-title">Daily Country</h1>
+            <div class="mode-toggle">
+                <button onclick="setMode('daily')">Daily</button>
+                <button onclick="setMode('practice')">Practice</button>
+            </div>
+        </header>
+
+        <div id="map-container">
+            </div>
+
+        <div class="input-area">
+            <input type="text" id="guess-input" placeholder="Enter country name..." autocomplete="off">
+            <button id="submit-btn" onclick="checkGuess()">Guess</button>
+            <p id="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
